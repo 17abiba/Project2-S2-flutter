@@ -184,19 +184,19 @@ class HomeScreen extends StatelessWidget{
                   child: Row(
                     children: [
                       Container(
-                        child: const Icon(Icons.location_on_rounded, size: 40,),
+                        child: const Icon(Icons.location_on_rounded, size: 50,),
                       ),
+                      const SizedBox(width: 20),
                       Container(
                         padding: const EdgeInsets.all(10),
-                        child: const Column(
+                        child:  Column(
                           children: [
-                            Align(
-                              alignment: Alignment.center,
-                              child: Text("Your Location", style: TextStyle(color: Colors.black54, fontSize: 12,decoration: TextDecoration.none)),
+                            Container(
+                              child: const Text("Your Location", style: TextStyle(color: Colors.black54, fontSize: 12,decoration: TextDecoration.none)),
                             ),
-                            Align(
-                              alignment: Alignment.center,
-                               child: Text("42 East 20th Street, NY", style: TextStyle(color: Colors.black, fontSize: 12,decoration: TextDecoration.none)),
+                            const SizedBox(height:5),
+                            Container(
+                            child: const Text("42 East 20th Street, NY", style: TextStyle(color: Colors.black, fontSize: 12,decoration: TextDecoration.none)),
                             ),
                           ],
                         ),
